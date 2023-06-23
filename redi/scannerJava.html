@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Uso del Scanner en Java</title>
+  <link rel="stylesheet" href="../css/estiloJava.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../index.html#Lenguajes">Lenguajes</a>
+            <a href="../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+  <div class="container">
+  <div class="content">
+  <h1>Uso del Scanner en Java</h1>
+  
+  <p>El <code>Scanner</code> es una clase en Java que se utiliza para obtener la entrada del usuario desde la consola o desde otro flujo de datos. Proporciona métodos para leer diferentes tipos de datos, como enteros, flotantes, cadenas, etc.</p>
+  
+  <h2>Ejemplo de uso del Scanner</h2>
+  <p>El siguiente ejemplo muestra cómo usar el <code>Scanner</code> para leer un número entero ingresado por el usuario:</p>
+  <pre>
+    <code>
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese un número entero: ");
+        <span class="keyword">int</span> numero = scanner.nextInt();
+        
+        System.out.println("El número ingresado es: " + numero);
+        
+        scanner.close();
+    }
+}
+    </code>
+  </pre>
+  
+  <p>En este ejemplo, primero se importa la clase <code>Scanner</code> del paquete <code>java.util</code>. Luego, se crea una instancia de <code>Scanner</code> pasando <code>System.in</code> como argumento, lo que indica que se leerá la entrada desde la consola.</p>
+  
+  <p>Se muestra un mensaje al usuario para que ingrese un número entero. Luego, se utiliza el método <code>nextInt()</code> del objeto <code>Scanner</code> para leer el número entero ingresado por el usuario y se almacena en la variable <code>numero</code>.</p>
+  
+  <p>Finalmente, se imprime el número ingresado en la consola. Es importante cerrar el objeto <code>Scanner</code> llamando al método <code>close()</code> para liberar los recursos utilizados.</p>
+  
+  <h2>Otros métodos útiles del Scanner</h2>
+  <p>Además de <code>nextInt()</code>, el <code>Scanner</code> proporciona otros métodos para leer diferentes tipos de datos:</p>
+  <ul>
+    <li><code>nextLine()</code>: Lee una línea completa de texto ingresada por el usuario. Por ejemplo:</li>
+    <pre>
+      <code>
+System.out.print("Ingrese su nombre: ");
+String nombre = scanner.nextLine();
+System.out.println("Hola, " + nombre);
+      </code>
+    </pre>
+    <li><code>nextDouble()</code>: Lee un número en formato de punto flotante ingresado por el usuario. Por ejemplo:</li>
+    <pre>
+      <code>
+System.out.print("Ingrese un número decimal: ");
+double decimal = scanner.nextDouble();
+System.out.println("El número ingresado es: " + decimal);
+      </code>
+    </pre>
+    <li><code>nextBoolean()</code>: Lee un valor booleano (<code>true</code> o <code>false</code>) ingresado por el usuario. Por ejemplo:</li>
+    <pre>
+      <code>
+System.out.print("¿Está de acuerdo? (true/false): ");
+boolean acuerdo = scanner.nextBoolean();
+if (acuerdo) {
+    System.out.println("Está de acuerdo");
+} else {
+    System.out.println("No está de acuerdo");
+}
+      </code>
+    </pre>
+  </ul>
+  
+  <p>Estos son solo algunos de los métodos disponibles en la clase <code>Scanner</code> de Java. Puedes consultar la documentación oficial de Java para obtener más información sobre los diferentes métodos y opciones de lectura proporcionados por el <code>Scanner</code>.</p>
+  
+  <h2>Cierre del Scanner</h2>
+  <p>Es importante cerrar el objeto <code>Scanner</code> cuando ya no se necesite. El cierre del <code>Scanner</code> libera los recursos utilizados y evita posibles fugas de memoria. Se puede cerrar llamando al método <code>close()</code> del objeto <code>Scanner</code>. Por ejemplo:</p>
+  <pre>
+    <code>
+scanner.close();
+    </code>
+  </pre>
+  
+  <p>Es recomendable cerrar el <code>Scanner</code> al finalizar su uso o cuando ya no se vaya a utilizar más. Si no se cierra adecuadamente, puede provocar problemas en la aplicación.</p>
+  
+  <h2>Recursos adicionales</h2>
+  <p>Si deseas aprender más sobre el uso del <code>Scanner</code> en Java, aquí hay algunos recursos útiles:</p>
+  <ul>
+    <li><a class="linkCuadro" href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Scanner.html">Documentación oficial de Java: clase Scanner</a></li>
+    <li><a class="linkCuadro" href="https://www.w3schools.com/java/java_user_input.asp">W3Schools: Java User Input (en inglés)</a></li>
+    <li><a class="linkCuadro" href="https://www.oracle.com/java/technologies/javase-jdk14-doc-downloads.html">Descargas del JDK y documentación de Java</a></li>
+  </ul>
+  <div>
+    <a class="boton derecha" href="TemasJava.html">Regresar a los temas</a>
+    </div>
+  </div>
+  <div class="sidebar">
+    <ul class="sin-puntos">
+      <h2 style="text-align: center;">Otros temas...</h2>
+      <li>
+        <a class="linkCuadro" href="red1.html">Introducción y sintaxis</a>
+        <p></p>
+      </li>
+      <li>
+        <a class="linkCuadro" href="condicionalesJava.html">Estructuras condicionales</a>
+        <p></p>
+      </li>
+      <li>
+        <a class="linkCuadro" href="buclesJava.html">Estructuras de bucle</a>
+        <p></p>
+      </li>
+      <li>
+        <a class="linkCuadro" href="arreglosJava.html">Arreglos</a>
+        <p></p>
+      </li>
+    </ul>
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bucles en Java</title>
+  <link rel="stylesheet" href="../css/estiloJava.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../index.html#Lenguajes">Lenguajes</a>
+            <a href="../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="content">
+    <h1>Bucles en Java</h1>
+    <h2>Bucle For</h2>
+    <p>El bucle <code>for</code> se utiliza para repetir un bloque de código un número específico de veces. Tiene tres partes: una inicialización, una condición y una actualización.</p>
+    <pre>
+      <code>
+        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="keyword">0</span>; i < <span class="keyword">5</span>; i++) {
+          System.out.println(<span class="keyword">"Iteración "</span> + i);
+        }
+      </code>
+    </pre>
+
+    <p>En el ejemplo anterior, el bucle <code>for</code> se ejecutará 5 veces. La variable <code>i</code> se inicializa en 0, y mientras <code>i</code> sea menor que 5, se ejecutará el bloque de código dentro del bucle. Después de cada iteración, se incrementa el valor de <code>i</code> en 1.</p>
+
+    <h2>Bucle While</h2>
+    <p>El bucle <code>while</code> se utiliza para repetir un bloque de código mientras se cumpla una condición.</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> contador = <span class="keyword">0</span>;
+
+        <span class="keyword">while</span> (contador < <span class="keyword">3</span>) {
+          System.out.println(<span class="keyword">"Iteración "</span> + contador);
+          contador++;
+        }
+      </code>
+    </pre>
+
+    <p>En el ejemplo anterior, el bucle <code>while</code> se ejecutará mientras <code>contador</code> sea menor que 3. En cada iteración, se muestra el mensaje "Iteración" seguido del valor de <code>contador</code> y luego se incrementa <code>contador</code> en 1.</p>
+
+    <h2>Bucle Do-While</h2>
+    <p>El bucle <code>do-while</code> es similar al bucle <code>while</code>, pero la diferencia es que se ejecuta al menos una vez antes de verificar la condición.</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> x = <span class="keyword">0</span>;
+
+        <span class="keyword">do</span> {
+          System.out.println(<span class="keyword">"Iteración "</span> + x);
+          x++;
+        } <span class="keyword">while</span> (x < <span class="keyword">3</span>);
+      </code>
+    </pre>
+
+    <p>En el ejemplo anterior, el bucle <code>do-while</code> se ejecutará al menos una vez, ya que la condición se verifica después de cada iteración. Mientras <code>x</code> sea menor que 3, se mostrará el mensaje "Iteración" seguido del valor de <code>x</code> y luego se incrementará <code>x</code> en 1.</p>
+    <div>
+        <a class="boton derecha" href="TemasJava.html">Regresar a los temas</a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="sin-puntos">
+          <h2 style="text-align: center;">Otros temas...</h2>
+          <li>
+            <a class="linkCuadro" href="red1.html">Introducción y sintaxis</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="scannerJava.html">Scanner</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="condicionalesJava.html">Estructuras condicionales</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="arreglosJava.html">Arreglos</a>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+  </div>
+</body>
+</html>

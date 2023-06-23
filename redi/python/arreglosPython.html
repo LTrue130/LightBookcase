@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arreglos en Python(Listas)</title>
+  <link rel="stylesheet" href="../../css/estiloPython.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <img src = "../../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+          <img src="../../img/LogoName.png" alt = "Light Bookcase"/>
+          <a href="../../index.html">Inicio</a>
+          <a href="../../index.html#Sobre-nosotros">Acerca de</a>
+          <a href="../../index.html#Lenguajes">Lenguajes</a>
+          <a href="../../index.html#Contacto">Contacto</a>
+        </nav>
+    </header>  
+
+  <div class="container">
+    <div class="content">
+    <h1>Arreglos en Python</h1>
+    <h2>Arreglos (Listas)</h2>
+    <p>En Python, los arreglos se conocen como listas y se utilizan para almacenar una colección de elementos ordenados. Aquí tienes un ejemplo de cómo declarar una lista y acceder a sus elementos:</p>
+    <pre>
+      <code>
+        <span class="keyword">frutas</span> = [<span class="string">'manzana'</span>, <span class="string">'banana'</span>, <span class="string">'cereza'</span>]
+        <span class="keyword">print</span>(<span class="keyword">frutas</span>)  # Imprime toda la lista
+        <span class="keyword">print</span>(<span class="keyword">frutas</span>[<span class="number">0</span>])  # Accede al primer elemento de la lista
+        <span class="keyword">print</span>(<span class="keyword">frutas</span>[<span class="number">1</span>])  # Accede al segundo elemento de la lista
+      </code>
+    </pre>
+
+    <h2>Operaciones con arreglos</h2>
+    <p>Python proporciona diversas operaciones y métodos para trabajar con arreglos. Algunos ejemplos son:</p>
+    <ul>
+      <li><span class="keyword">len</span>(<span class="keyword">lista</span>): Retorna la longitud de la lista.</li>
+      <li><span class="keyword">append</span>(<span class="keyword">elemento</span>): Agrega un elemento al final de la lista.</li>
+      <li><span class="keyword">insert</span>(<span class="number">2</span>, <span class="string">'nuevo'</span>): Inserta un elemento en una posición específica de la lista.</li>
+      <li><span class="keyword">remove</span>(<span class="string">'manzana'</span>): Elimina la primera aparición del elemento especificado de la lista.</li>
+      <li><span class="keyword">pop</span>(<span class="number">1</span>): Elimina y retorna el elemento en la posición especificada de la lista.</li>
+    </ul>
+    <p>Aquí tienes un ejemplo que utiliza algunas de estas operaciones:</p>
+    <pre>
+      <code>
+        <span class="keyword">frutas</span> = [<span class="string">'manzana'</span>, <span class="string">'banana'</span>, <span class="string">'cereza'</span>]
+        <span class="keyword">print</span>(<span class="keyword">len</span>(<span class="keyword">frutas</span>))  # Imprime la longitud de la lista
+        <span class="keyword">frutas</span>.<span class="keyword">append</span>(<span class="string">'durazno'</span>)  # Agrega 'durazno' al final de la lista
+        <span class="keyword">frutas</span>.<span class="keyword">insert</span>(<span class="number">2</span>, <span class="string">'naranja'</span>)  # Inserta 'naranja' en la posición 2
+        <span class="keyword">print</span>(<span class="keyword">frutas</span>)  # Imprime la lista actualizada
+        <span class="keyword">frutas</span>.<span class="keyword">remove</span>(<span class="string">'banana'</span>)  # Elimina 'banana' de la lista
+        <span class="keyword">elemento</span> = <span class="keyword">frutas</span>.<span class="keyword">pop</span>(<span class="number">1</span>)  # Elimina y retorna el elemento en la posición 1
+        <span class="keyword">print</span>(<span class="keyword">elemento</span>)  # Imprime el elemento eliminado
+        <span class="keyword">print</span>(<span class="keyword">frutas</span>)  # Imprime la lista actualizada
+      </code>
+    </pre>
+    <div>
+        <a class="boton derecha" href="TemasPython.html">Regresar a los temas</a>
+        </div>
+        </div>
+        <div class="sidebar">
+          <ul class="sin-puntos">
+            <h2 style="text-align: center;">Otros temas...</h2>
+            <li>
+              <a class="linkCuadro" href="red2.html">Introducción y sintaxis</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="condicionalesPython.html">Estructuras condicionales</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="buclePython.html">Estructuras de bucle</a>
+              <p></p>
+            </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>

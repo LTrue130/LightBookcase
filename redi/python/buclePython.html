@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bucles en Python</title>
+  <link rel="stylesheet" href="../../css/estiloPython.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../../index.html">Inicio</a>
+            <a href="../../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../../index.html#Lenguajes">Lenguajes</a>
+            <a href="../../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="content">
+    <h1>Bucles en Python</h1>
+    <h2>Bucle while</h2>
+    <p>El bucle <span class="keyword">while</span> se utiliza para repetir un bloque de código mientras se cumpla una condición. Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">contador</span> = <span class="keyword">0</span>
+        <span class="keyword">while</span> <span class="keyword">contador</span> < <span class="keyword">5</span>:
+            <span class="keyword">print</span>(<span class="string">'El contador es'</span>, <span class="keyword">contador</span>)
+            <span class="keyword">contador</span> += <span class="keyword">1</span>
+      </code>
+    </pre>
+
+    <h2>Bucle for</h2>
+    <p>El bucle <span class="keyword">for</span> se utiliza para recorrer una secuencia de elementos (como una lista o una cadena de texto). Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">frutas</span> = [<span class="string">'manzana'</span>, <span class="string">'banana'</span>, <span class="string">'cereza'</span>]
+        <span class="keyword">for</span> <span class="keyword">fruta</span> <span class="keyword">in</span> <span class="keyword">frutas</span>:
+            <span class="keyword">print</span>(<span class="keyword">fruta</span>)
+      </code>
+    </pre>
+
+    <h2>Control de bucles</h2>
+    <p>En Python, puedes controlar la ejecución de un bucle utilizando las siguientes declaraciones:</p>
+    <ul>
+      <li><span class="keyword">break</span>: Termina el bucle y sale de él.</li>
+      <li><span class="keyword">continue</span>: Salta a la siguiente iteración del bucle sin ejecutar el código restante.</li>
+    </ul>
+    <p>Aquí tienes un ejemplo que utiliza estas declaraciones:</p>
+    <pre>
+      <code>
+        <span class="keyword">for</span> <span class="keyword">numero</span> <span class="keyword">in</span> <span class="keyword">range</span>(<span class="keyword">10</span>):
+            <span class="keyword">if</span> <span class="keyword">numero</span> == <span class="keyword">7</span>:
+                <span class="keyword">break</span>
+            <span class="keyword">if</span> <span class="keyword">numero</span> == <span class="keyword">3</span>:
+                <span class="keyword">continue</span>
+            <span class="keyword">print</span>(<span class="keyword">numero</span>)
+      </code>
+    </pre>
+    <div>
+        <a class="boton derecha" href="TemasPython.html">Regresar a los temas</a>
+        </div>
+        </div>
+        <div class="sidebar">
+          <ul class="sin-puntos">
+            <h2 style="text-align: center;">Otros temas...</h2>
+            <li>
+              <a class="linkCuadro" href="red2.html">Introducción y sintaxis</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="condicionalesPython.html">Estructuras condicionales</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="arreglosPython.html">Arreglos</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>

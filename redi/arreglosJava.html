@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arreglos en Java</title>
+  <link rel="stylesheet" href="../css/estiloJava.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <img src = "../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+        <img src="../img/LogoName.png" alt = "Light Bookcase"/>
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#Sobre-nosotros">Acerca de</a>
+        <a href="../index.html#Lenguajes">Lenguajes</a>
+        <a href="../index.html#Contacto">Contacto</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+    <h1>Arreglos en Java</h1>
+    <h2>Declaración de un Arreglo</h2>
+    <p>Un arreglo en Java es una estructura de datos que almacena un conjunto de elementos del mismo tipo. Para declarar un arreglo, se utiliza la siguiente sintaxis:</p>
+    <pre>
+      <code>
+        <span class="keyword">tipoDeDato</span>[] nombreDelArreglo = <span class="keyword">new</span> <span class="keyword">tipoDeDato"</span>[longitud];
+      </code>
+    </pre>
+    <p>Por ejemplo, para declarar un arreglo de enteros con una longitud de 5:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span>[] numeros = <span class="keyword">new</span> <span class="keyword">int</span>[5];
+      </code>
+    </pre>
+
+    <h2>Acceso a los Elementos del Arreglo</h2>
+    <p>Para acceder a los elementos individuales de un arreglo, se utiliza el índice. El índice representa la posición del elemento en el arreglo, comenzando desde 0. Por ejemplo, para acceder al primer elemento del arreglo "numeros", se utiliza:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> primerNumero = numeros[0];
+      </code>
+    </pre>
+
+    <h2>Inicialización de un Arreglo</h2>
+    <p>Un arreglo puede ser inicializado al momento de su declaración o en un momento posterior. Para inicializar un arreglo al momento de la declaración, se proporcionan los valores iniciales entre llaves. Por ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span>[] numeros = {1, 2, 3, 4, 5};
+      </code>
+    </pre>
+
+    <h2>Recorrido de un Arreglo</h2>
+    <p>Para recorrer los elementos de un arreglo, se puede utilizar un bucle <code>for</code>. El bucle se ejecuta desde el índice 0 hasta la longitud del arreglo menos 1. Por ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span>[] numeros = {1, 2, 3, 4, 5};
+
+        <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i < numeros.length; i++) {
+          System.out.println(numeros[i]);
+        }
+      </code>
+    </pre>
+
+    <h2>Operaciones con Arreglos</h2>
+    <p>Java proporciona diversas operaciones para trabajar con arreglos, como la búsqueda de un elemento, la ordenación, la copia de un arreglo y más. Estas operaciones se pueden realizar utilizando las funciones y métodos disponibles en la biblioteca de Java.</p>
+  
+    <h2>Recursos adicionales</h2>
+    <p>Si deseas aprender más sobre los arreglos en Java, aquí hay algunos recursos útiles:</p>
+    <ul>
+      <li><a class="linkCuadro" href="https://docs.oracle.com/en/java/">Documentación oficial de Java</a></li>
+      <li><a class="linkCuadro" href="https://www.w3schools.com/java/java_arrays.asp">W3Schools: Arreglos en Java</a></li>
+      <li><a class="linkCuadro" href="https://www.geeksforgeeks.org/arrays-in-java/">GeeksforGeeks: Arreglos en Java</a></li>
+    </ul>
+    <div>
+      <a class="boton derecha" href="TemasJava.html">Regresar a los temas</a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul class="sin-puntos">
+        <h2 style="text-align: center;">Otros temas...</h2>
+        <li>
+          <a class="linkCuadro" href="red1.html">Introducción y sintaxis</a>
+          <p></p>
+        </li>
+        <li>
+          <a class="linkCuadro" href="scannerJava.html">Scanner</a>
+          <p></p>
+        </li>
+        <li>
+          <a class="linkCuadro" href="condicionalesJava.html">Estructuras condicionales</a>
+          <p></p>
+        </li>
+        <li>
+          <a class="linkCuadro" href="buclesJava.html">Estructuras de bucle</a>
+          <p></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

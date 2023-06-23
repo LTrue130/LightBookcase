@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+nav {
+  position: fixed;
+  top: 4%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 9999;
+  width: 100%;
+  height: 8%;
+  background-color: #143649;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  font-size: 16px; /* Tamaño de fuente inicial */
+  transition: font-size 0.3s ease; /* Transición suave para cambios de tamaño de fuente */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el desbordamiento del texto */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto desbordado */
+}
+
+nav p {
+  margin: 0;
+}
+
+nav > a {
+  color: #80c9bf;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  width: auto;
+}
+
+nav img:nth-child(1) {
+  left: 20px;
+  transform: translate(0, -50%);
+  transition: 0.3s ease;
+}
+
+nav img:nth-child(2) {
+  left: 90px;
+  transform: translate(0, -50%);
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 700px){
+  nav {
+    font-size: 14px; /* Tamaño de fuente más pequeño para ventanas con un ancho máximo de 400px */
+    justify-content: right; /* Centra el texto cuando se alcanza el límite del margen */
+}
+    nav img:nth-child(1) {
+    left: 25px;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: auto;
+  }
+
+
+  nav img:nth-child(2) {
+    width: 150px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+
+  nav img:nth-child(2) {
+    display: none;
+  }
+}
+
+.sin-puntos {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.linkCuadro {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(173, 209, 162);
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linkCuadro:hover {
+  background-color: #77c777;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1f4553; /* Color lavanda fuerte */
+  color: #ffffff; /* Texto blanco */
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  align-self: flex-end;
+
+}
+
+.boton:hover {
+  background-color: #6b8a9c; /* Color lavanda más oscuro al pasar el cursor */
+}
+
+.derecha {
+  float: right;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #def1f0;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px; /* Agrega margen superior */
+  margin-bottom: 5px; /* Agrega margen inferior */
+}
+
+.content {
+  flex: 3;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: rgba(182, 219, 132, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+code {
+  /*font-size: large;*/
+  background-color: #1e1d22; /* Fondo oscuro */
+  color: #cbd39f; /* Texto claro */
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  word-wrap: break-word; /* Evitar que el texto sobrepase el límite del contenedor */
+  max-width: 100%; /* Establecer un ancho máximo para el contenedor */
+  overflow-x: auto; /* Habilitar el desplazamiento horizontal si es necesario */
+}
+
+code span.keyword {
+  /*font-size: large;*/
+  color: #c58466; /* Texto azul para palabras clave */
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Estructuras Condicionales en C++</title>
+  <link rel="stylesheet" href="../../css/estiloCPP.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../../index.html">Inicio</a>
+            <a href="../../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../../index.html#Lenguajes">Lenguajes</a>
+            <a href="../../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="content">
+    <h1>Estructuras Condicionales en C++</h1>
+    <h2>La estructura if</h2>
+    <p>La estructura <span class="keyword">if</span> se utiliza para ejecutar un bloque de código si se cumple una condición. Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> edad = <span class="number">18</span>;
+
+        <span class="keyword">if</span> (edad &gt;= <span class="number">18</span>) {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Eres mayor de edad"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        }
+      </code>
+    </pre>
+
+    <h2>La estructura if-else</h2>
+    <p>La estructura <span class="keyword">if-else</span> se utiliza para ejecutar un bloque de código si se cumple una condición y otro bloque de código si la condición no se cumple. Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> edad = <span class="number">15</span>;
+
+        <span class="keyword">if</span> (edad &gt;= <span class="number">18</span>) {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Eres mayor de edad"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        } <span class="keyword">else</span> {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Eres menor de edad"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        }
+      </code>
+    </pre>
+
+    <h2>La estructura if-else if-else</h2>
+    <p>La estructura <span class="keyword">if-else if-else</span> se utiliza cuando hay múltiples condiciones y se ejecuta un bloque de código según la primera condición que se cumpla. Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> calificacion = <span class="number">85</span>;
+
+        <span class="keyword">if</span> (calificacion &gt;= <span class="number">90</span>) {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Excelente"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        } <span class="keyword">else if</span> (calificacion &gt;= <span class="number">70</span>) {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Aprobado"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        } <span class="keyword">else</span> {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Reprobado"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+        }
+      </code>
+    </pre>
+
+    <h2>La estructura switch case</h2>
+    <p>La estructura <span class="keyword">switch case</span> se utiliza para evaluar una expresión y ejecutar diferentes bloques de código según el valor de la expresión. Aquí tienes un ejemplo:</p>
+    <pre>
+      <code>
+        <span class="keyword">char</span> operador = <span class="char">'+'</span>;
+        <span class="keyword">int</span> num1 = <span class="number">10</span>, num2 = <span class="number">5</span>, resultado;
+
+        <span class="keyword">switch</span> (operador) {
+            <span class="keyword">case</span> <span class="char">'+'</span>:
+                resultado = num1 + num2;
+                <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Suma: "</span> &lt;&lt; resultado &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> <span class="char">'-'</span>:
+                resultado = num1 - num2;
+                <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Resta: "</span> &lt;&lt; resultado &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> <span class="char">'*'</span>:
+                resultado = num1 * num2;
+                <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Multiplicación: "</span> &lt;&lt; resultado &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> <span class="char">'/'</span>:
+                resultado = num1 / num2;
+                <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"División: "</span> &lt;&lt; resultado &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+                <span class="keyword">break</span>;
+            <span class="keyword">default</span>:
+                <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"Operador inválido"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+                <span class="keyword">break</span>;
+        }
+      </code>
+    </pre>
+    <div>
+        <a class="boton derecha" href="TemasCPP.html">Regresar a los temas</a>
+        </div>
+        </div>
+        <div class="sidebar">
+          <ul class="sin-puntos">
+            <h2>Otros temas...</h2>
+            <li>
+              <a class="linkCuadro" href="red3.html">Introducción y sintaxis</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="buclesCPP.html">Estructuras de bucle</a>
+              <p></p>
+            </li>
+            <li>
+              <a class="linkCuadro" href="arreglosCPP.html">Arreglos</a>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+  </div>
+</body>
+</html>

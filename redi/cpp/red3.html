@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Introducción a C++</title>
+  <link rel="stylesheet" href="../../css/estiloCPP.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../../index.html">Inicio</a>
+            <a href="../../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../../index.html#Lenguajes">Lenguajes</a>
+            <a href="../../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="content">
+    <h1>Introducción a C++</h1>
+    <h2>¿Qué es C++?</h2>
+    <p>C++ es un lenguaje de programación de propósito general que se utiliza ampliamente para el desarrollo de software. Es una extensión del lenguaje C e incorpora características adicionales, como programación orientada a objetos, que lo hacen más poderoso y versátil.</p>
+
+    <h2>Sintaxis básica de C++</h2>
+    <p>La sintaxis de C++ se compone de una serie de reglas que definen cómo se deben escribir los programas en este lenguaje. Aquí tienes un ejemplo de un programa simple en C++:</p>
+    <pre>
+      <code>
+        <span class="keyword">#include</span> &lt;iostream&gt;
+
+        <span class="keyword">int</span> <span class="identifier">main</span>() {
+            <span class="keyword">std</span>::<span class="identifier">cout</span> &lt;&lt; <span class="string">"¡Hola, mundo!"</span> &lt;&lt; <span class="keyword">std</span>::<span class="identifier">endl</span>;
+            <span class="keyword">return</span> <span class="number">0</span>;
+        }
+      </code>
+    </pre>
+
+    <h2>Palabras clave en C++</h2>
+    <p>C++ tiene un conjunto de palabras clave que tienen un significado especial y no pueden utilizarse como nombres de variables u otros identificadores. Algunas palabras clave en C++ incluyen:</p>
+    <ul>
+      <li><span class="keyword">int</span>: define una variable entera.</li>
+      <li><span class="keyword">float</span>: define una variable de punto flotante.</li>
+      <li><span class="keyword">if</span>: inicia una estructura condicional.</li>
+      <li><span class="keyword">for</span>: inicia un bucle for.</li>
+      <li><span class="keyword">class</span>: define una clase.</li>
+    </ul>
+
+    <h2>Compilación de programas en C++</h2>
+    <p>Para ejecutar un programa en C++, primero debes compilarlo. Puedes utilizar un compilador como <span class="keyword">g++</span> para generar un archivo ejecutable a partir del código fuente. Aquí tienes un ejemplo de cómo compilar un programa en C++ en la línea de comandos:</p>
+    <pre>
+      <code>
+        <span class="comment">// Compilación</span>
+        g++ programa.cpp -o programa
+
+        <span class="comment">// Ejecución</span>
+        ./programa
+      </code>
+    </pre>
+    <div>
+        <a class="boton derecha" href="TemasCPP.html">Regresar a los temas</a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="sin-puntos">
+          <h2>Otros temas...</h2>
+          <li>
+            <a class="linkCuadro" href="condicionalesCPP.html">Estructuras condicionales</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="buclesCPP.html">Estructuras de bucle</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="arreglosCPP.html">Arreglos</a>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+  </div>
+</body>
+</html>

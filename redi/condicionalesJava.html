@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Estructuras Condicionales en Java</title>
+  <link rel="stylesheet" href="../css/estiloJava.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "../img/BookcaseIcon.png" alt="BookcaseLogo"/>
+            <img src="../img/LogoName.png" alt = "Light Bookcase"/>
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#Sobre-nosotros">Acerca de</a>
+            <a href="../index.html#Lenguajes">Lenguajes</a>
+            <a href="../index.html#Contacto">Contacto</a>
+        </nav>
+      </header>
+    <div class="container">
+    <div class="content">
+    <header>
+    <h1>Estructuras Condicionales en Java</h1>
+    </header>
+    <h2>If-Else</h2>
+    <p>La estructura de control <code>if-else</code> permite ejecutar un bloque de código si se cumple una condición y otro bloque de código si no se cumple.</p>
+    <pre>
+      <code>
+        <span class="keyword">int</span> edad = <span class="keyword">18</span>;
+
+        <span class="keyword">if</span> (edad >= <span class="keyword">18</span>) {
+          System.out.println(<span class="keyword">"Eres mayor de edad"</span>);
+        } <span class="keyword">else</span> {
+          System.out.println(<span class="keyword">"Eres menor de edad"</span>);
+        }
+      </code>
+    </pre>
+
+    <p>En el ejemplo anterior, se declara una variable <code>edad</code> y se utiliza la estructura <code>if-else</code> para comprobar si la edad es mayor o igual a 18. Si se cumple la condición, se muestra el mensaje "Eres mayor de edad", de lo contrario, se muestra el mensaje "Eres menor de edad".</p>
+
+    <h2>Switch</h2>
+    <p>La estructura de control <code>switch</code> permite evaluar una expresión y ejecutar diferentes bloques de código según el valor de la expresión.</p>
+    <pre>
+      <code>
+        <span class="keyword">char</span> calificacion = <span class="keyword">'A'</span>;
+
+        <span class="keyword">switch</span> (calificacion) {
+          <span class="keyword">case</span> <span class="keyword">'A'</span>:
+            System.out.println(<span class="keyword">"Excelente"</span>);
+            <span class="keyword">break</span>;
+          <span class="keyword">case</span> <span class="keyword">'B'</span>:
+            System.out.println(<span class="keyword">"Bueno"</span>);
+            <span class="keyword">break</span>;
+          <span class="keyword">case</span> <span class="keyword">'C'</span>:
+            System.out.println(<span class="keyword">"Regular"</span>);
+            <span class="keyword">break</span>;
+          <span class="keyword">default</span>:
+            System.out.println(<span class="keyword">"Calificación no válida"</span>);
+        }
+      </code>
+    </pre>
+
+    <p>En el ejemplo anterior, se declara una variable <code>calificacion</code> de tipo <code>char</code> y se utiliza la estructura 
+    <code>switch</code> para evaluar su valor. Dependiendo del valor de la variable, se ejecuta el bloque de código correspondiente. En este caso, 
+    si la calificación es 'A', se muestra el mensaje "Excelente", si es 'B', se muestra "Bueno", si es 'C', se muestra "Regular" y si no coincide con ninguno de los casos, se muestra 
+    "Calificación no válida".</p>
+        <div>
+        <a class="boton derecha" href="TemasJava.html">Regresar a los temas</a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="sin-puntos">
+          <h2 style="text-align: center;">Otros temas...</h2>
+          <li>
+            <a class="linkCuadro" href="red1.html">Introducción y sintaxis</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="scannerJava.html">Scanner</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="buclesJava.html">Estructuras de bucle</a>
+            <p></p>
+          </li>
+          <li>
+            <a class="linkCuadro" href="arreglosJava.html">Arreglos</a>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+  </div>
+</body>
+</html>
